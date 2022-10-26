@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: gray;
+    padding: 20px;
+    text-decoration: underline;
+    text-align-last:right;
+
+}
+
+
+#top {
+    background-image: url("../images/blue-stripes.jpg");
+    display: flex;
+    justify-content: flex-end;
+
+}
+#sub {
+    color:aliceblue;
+    background-color: aqua;
+}
+
+
+
+body {
+    font-family: arial;
+    background-color:aliceblue;
+}
+
+nav a {
+    font-size: large;
+    color: aliceblue;
+}
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+aside{
+flex: 1;
+background-color: aliceblue;
+padding: 80px;
+text-align: center;
+border-right: 5px solid teal;
+}
+
+nav a:hover {
+    outline: 1px solid red;
+  }
+
+.applications {
+    flex: 4;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+
+  .card {
+    border: 3px solid teal;
+    padding: 10px;
+    flex: 0 0 400px;
+    margin: 20px;
+  }
+  
+  .card:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .card header {
+    text-align: left;
+    align-content: flex-end;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+
+  footer {
+    background-color: gray;
+    padding: 50px;
+  }
+
+  footer p {
+    text-decoration: underline;
+    text-align: center;
+    align-content: space-between;
+}
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+}
