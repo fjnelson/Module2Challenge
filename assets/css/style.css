@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-nav {
+.navigation-bar {
     background-color: gray;
     padding: 20px;
     text-decoration: underline;
@@ -25,7 +25,7 @@ nav {
 
 
 body {
-    font-family: arial;
+    font-family: arial, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:aliceblue;
 }
 
@@ -39,12 +39,20 @@ main{
     flex-wrap: wrap;
 }
 
+.about-me{
+  width: 100%;
+  text-align: center;
+  border: 2px solid red;
+}
+
 aside{
-flex: 1;
-background-color: aliceblue;
-padding: 80px;
-text-align: center;
-border-right: 5px solid teal;
+  flex-direction: column;
+  flex: 1;
+  background-color: aliceblue;
+  padding: 100px;
+  text-align: center;
+  border-right: 5px solid teal;
+  justify-content: space-between;
 }
 
 nav a:hover {
@@ -87,11 +95,14 @@ nav a:hover {
     padding: 50px;
   }
 
-  footer p {
+  footer nav a{
+    /* display: flex; */
+    background-color: gray;
     text-decoration: underline;
     text-align: center;
-    align-content: space-between;
-}
+    justify-content: space-between;
+    margin: 10px;
+  }
 @media screen and (max-width: 768px) {
     main,
     nav {
