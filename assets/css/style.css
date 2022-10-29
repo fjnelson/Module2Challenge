@@ -48,6 +48,12 @@ nav a {
     padding: 10px;
 }
 
+/* .surf{
+  background-image: url("../images/surf-report.jpeg")
+} */
+
+
+
 main{
     display:flex;
     flex-wrap: wrap;
@@ -109,7 +115,6 @@ nav a:hover {
   .card img {
     width: 100%;
   }
-
 
   footer {
     background-color: gray;
