@@ -4,12 +4,12 @@
 
 .navigation-bar {
     background-color: gray;
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
     text-decoration: underline;
     text-align-last:right;
 
 }
-
+/* How do I make the red box not show up on title */
 .main-title a{
   display: flex;
   justify-content: center;
@@ -26,8 +26,6 @@
 #sub {
     color:aliceblue;
 }
-
-
 
 body {
     font-family: arial, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,16 +48,22 @@ main{
   text-align: center;
 }
 
-aside{
+aside {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   flex: 1;
   background-color: aliceblue;
   padding: 100px;
   text-align: center;
   border-right: 5px solid teal;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
+.aside{
+  display: flex;
+  flex-direction: column;
+}
+
 nav a:hover {
     outline: 1px solid red;
   }
@@ -114,13 +118,13 @@ nav a:hover {
     font-size: 72px;
   }
   footer nav {
-    /* display: flex; */
     background-color: gray;
     text-decoration: underline;
     text-align: center;
     justify-content: space-between;
     margin: 10px;
   }
+
 @media screen and (max-width: 825px) {
     main,
     nav {
@@ -129,4 +133,51 @@ nav a:hover {
     aside {
       border-right: 0;
     }
+}
+
+@media screen and (max-width: 438px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+  aside {
+    border-right: 0;
+  }
+  .card:hover{
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  nav a:hover {
+    outline: none;
+  }
+  .navigation-bar{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  h4 {
+    color: yellow;
+    font-size: 36px;
+  }
+  .card img {
+    display: flex;
+    width: 250px;
+  }
+/* Issues with pictures and titles runnning off the screen at max-width 300px */
+  .card {
+    border: 0;
+    margin: 20px;
+  }
+  .main-title a{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+    font-size: 50px;
+  }
 }
