@@ -1,3 +1,14 @@
+/* WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application */
+
+/* If you don't have enough web applications to showcase at this point, 
+use placeholder images and names. 
+You can change them to real applications as you create them 
+later in the course. */
+
 *{
     box-sizing: border-box;
 }
@@ -47,10 +58,7 @@ nav a {
     padding: 10px;
 }
 
-/* If you don't have enough web applications to showcase at this point, 
-use placeholder images and names. 
-You can change them to real applications as you create them 
-later in the course. */
+
 
 /* .surf{
   background-image: url("../images/surf-report.jpeg")
@@ -85,6 +93,9 @@ aside {
   flex-direction: column;
 }
 
+.aside a{
+  padding: 30px;
+}
 nav a:hover {
     outline: 1px solid var(--hell);
   }
@@ -100,23 +111,31 @@ nav a:hover {
   .card {
     border: 3px solid teal;
     padding: 10px;
-    flex: 0 0 400px;
+    flex: 0 0 20%;
     margin: 20px;
   }
+
+  .card-big{
+    border: 3px solid teal;
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 80%;
+    margin-bottom: 50px;
+  }
   
-  .card:hover{
+  .card:hover, .card-big:hover{
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -o-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
-  .card header {
+  .card header, .card-big header {
     text-align: left;
     align-content: flex-end;
   }
   
-  .card img {
+  .card img, .card-big img {
     width: 100%;
   }
 
@@ -127,6 +146,10 @@ nav a:hover {
 
   .me h2, .me p{
     font-size: 200%;
+  }
+
+  .me p{
+    padding-bottom: 20px;
   }
 
   .me h2 {
@@ -159,8 +182,31 @@ nav a:hover {
       display: flex;
       flex-shrink: 1;
     }
-}
 
+    .card:hover, .card-big:hover{
+      -moz-transform: none;
+      -webkit-transform: none;
+      -o-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+
+    nav a:hover {
+      outline: none;
+    }
+
+    .card img, .card-big img {
+      display: flex;
+      width: 250px;
+    }
+
+    .main-title a{
+      display: flex;
+      justify-content: center;
+      margin: 30px 0 30px 0;
+      font-size: 80px;
+    }
+}
 @media screen and (max-width: 438px) {
   main,
   nav {
@@ -169,7 +215,7 @@ nav a:hover {
   aside {
     border-right: 0;
   }
-  .card:hover{
+  .card:hover, .card-big:hover{
     -moz-transform: none;
     -webkit-transform: none;
     -o-transform: none;
@@ -191,24 +237,38 @@ nav a:hover {
     color: yellow;
     font-size: 36px;
   }
-  .card img {
+  .card img, .card-big img {
     display: flex;
     width: 250px;
+    padding: 0 0 0 40px;
   }
+
 /* Issues with pictures and titles runnning off the screen at 
 max-width 300px */
-  .card {
+  .card, .card-big {
     border: 0;
     margin: 20px;
+    border: none;
+    padding: 0 0 0 40px;
   }
   .main-title a{
     display: flex;
     justify-content: center;
     margin: 30px 0 30px 0;
-    font-size: 50px;
+    font-size: 60px;
   }
   .me img{
     display: flex;
     width: 250px;
+    padding: 0 0 0 40px;
   }
+  .about-me p {
+    font-size: 120%;
+    padding-bottom: 20px;
+  }
+
+  .aside h2, aside h2 a {
+    font-size: 120%;
+  }
+
 }
