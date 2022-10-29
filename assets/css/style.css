@@ -10,10 +10,11 @@
 
 }
 
-.main-title{
+.main-title a{
   display: flex;
   justify-content: center;
   margin: 30px 0 30px 0;
+  font-size: 100px;
 }
 
 #top {
@@ -50,7 +51,8 @@ main{
 }
 
 aside{
-  flex-direction: column;
+  display: flex;
+  flex-direction: column-reverse;
   flex: 1;
   background-color: aliceblue;
   padding: 100px;
@@ -58,7 +60,6 @@ aside{
   border-right: 5px solid teal;
   justify-content: space-between;
 }
-
 nav a:hover {
     outline: 1px solid red;
   }
