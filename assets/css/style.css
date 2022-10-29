@@ -10,6 +10,11 @@
 
 }
 
+.main-title{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+}
 
 #top {
     background-image: url("../images/blue-stripes.jpg");
@@ -19,7 +24,6 @@
 }
 #sub {
     color:aliceblue;
-    background-color: aqua;
 }
 
 
@@ -32,6 +36,7 @@ body {
 nav a {
     font-size: large;
     color: aliceblue;
+    padding: 10px;
 }
 
 main{
@@ -42,7 +47,6 @@ main{
 .about-me{
   width: 100%;
   text-align: center;
-  border: 2px solid red;
 }
 
 aside{
@@ -90,12 +94,25 @@ nav a:hover {
     width: 100%;
   }
 
+
   footer {
     background-color: gray;
-    padding: 50px;
+    padding: 2px;
   }
 
-  footer nav a{
+  .me h2, .me p{
+    font-size: 200%;
+  }
+
+  .me h2 {
+    text-decoration: underline;
+  }
+
+  h4 {
+    color: yellow;
+    font-size: 72px;
+  }
+  footer nav {
     /* display: flex; */
     background-color: gray;
     text-decoration: underline;
@@ -103,9 +120,12 @@ nav a:hover {
     justify-content: space-between;
     margin: 10px;
   }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 825px) {
     main,
     nav {
       flex-direction: column;
+    }
+    aside {
+      border-right: 0;
     }
 }
