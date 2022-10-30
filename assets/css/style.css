@@ -105,16 +105,16 @@ nav a:hover {
 .card {
   border: 3px solid teal;
   padding: 10px;
-  flex: 0 0 20%;
+  /* flex: 0 0 20%; */
+  flex: 1 1 20%;
   margin: 20px;
 }
 
 .card-big {
   border: 3px solid teal;
   padding: 10px;
-  margin: 20px;
+  margin: 20px 20px 50px 20px;
   flex: 0 0 80%;
-  margin-bottom: 50px;
 }
 
 .card:hover,
@@ -211,6 +211,21 @@ footer nav {
     width: 250px;
   }
 
+  /* .card img,
+  .card-big img {
+    border: 0;
+    margin: 20px;
+    border: none;
+    padding: 0 0 0 40px;
+  }
+
+  .card,
+  .card-big {
+    margin: 20px;
+    border: none;
+    padding: 0 0 0 40px;
+  } */
+
   .main-title a {
     display: flex;
     justify-content: center;
@@ -288,9 +303,4 @@ footer nav {
   aside h2 a {
     font-size: 120%;
   }
-
 }
-
-
-
-
