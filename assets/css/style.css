@@ -1,21 +1,20 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-:root{
+:root {
   --heaven: aliceblue;
   --hell: red;
 }
 
 .navigation-bar {
-    background-color: gray;
-    padding: 20px 40px 20px 20px;
-    text-decoration: none;
-    text-align-last:right;
-
+  background-color: gray;
+  padding: 20px 40px 20px 20px;
+  text-decoration: none;
+  text-align-last: right;
 }
 
-.main-title a{
+.main-title a {
   display: flex;
   justify-content: center;
   margin: 30px 0 30px 0;
@@ -27,32 +26,32 @@
 }
 
 #top {
-    background-image: url("../images/blue-stripes.jpg");
-    display: flex;
-    justify-content: flex-end;
-
+  background-image: url("../images/blue-stripes.jpg");
+  display: flex;
+  justify-content: flex-end;
 }
 #sub {
-    color: var(--heaven);
-    padding-right: 10px;
+  color: var(--heaven);
+  padding-right: 10px;
 }
 body {
-    font-family: arial, sans-serif, 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-    background-color: var(--heaven);
+  font-family: arial, sans-serif, "Segoe UI", Tahoma, "Geneva", Verdana,
+    sans-serif;
+  background-color: var(--heaven);
 }
 
 nav a {
-    font-size: large;
-    color: var(--heaven);
-    padding: 10px;
+  font-size: large;
+  color: var(--heaven);
+  padding: 10px;
 }
 
-main{
-    display:flex;
-    flex-wrap: wrap;
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.about-me{
+.about-me {
   width: 100%;
   text-align: center;
 }
@@ -69,139 +68,106 @@ aside {
   margin-bottom: 10px;
 }
 
-.aside{
+.aside {
   display: flex;
   flex-direction: column;
   background-color: gray;
 }
 
-.aside h2{
+.aside h2 {
   padding: 30px;
   font-size: 30px;
 }
 
-.aside a{
+.aside a {
   padding: 30px;
   font-size: 30px;
 }
 
-.card header .seo, .card-big header .seo {
+.card header .seo,
+.card-big header .seo {
   color: blue;
   font-size: 120%;
 }
 
 nav a:hover {
-    outline: 1px solid var(--hell);
-  }
+  outline: 1px solid var(--hell);
+}
 
 .applications {
-    flex: 4;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-  }
+  flex: 4;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .card {
-    border: 3px solid teal;
-    padding: 10px;
-    flex: 0 0 20%;
-    margin: 20px;
-  }
+.card {
+  border: 3px solid teal;
+  padding: 10px;
+  flex: 0 0 20%;
+  margin: 20px;
+}
 
-  .card-big{
-    border: 3px solid teal;
-    padding: 10px;
-    margin: 20px;
-    flex: 0 0 80%;
-    margin-bottom: 50px;
-  }
-  
-  .card:hover, .card-big:hover{
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  .card header, .card-big header {
-    text-align: left;
-    align-content: flex-end;
-  }
-  
-  .card img, .card-big img {
-    width: 100%;
-  }
+.card-big {
+  border: 3px solid teal;
+  padding: 10px;
+  margin: 20px;
+  flex: 0 0 80%;
+  margin-bottom: 50px;
+}
 
-  footer {
-    background-color: gray;
-    padding: 2px;
-  }
+.card:hover,
+.card-big:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.card header,
+.card-big header {
+  text-align: left;
+  align-content: flex-end;
+}
 
-  .me h2, .me p{
-    font-size: 200%;
-  }
+.card img,
+.card-big img {
+  width: 100%;
+}
 
-  .me p{
-    padding-bottom: 20px;
-  }
+footer {
+  background-color: gray;
+  padding: 2px;
+}
 
-  .me h2 {
-    text-decoration: underline;
-  }
+.me h2,
+.me p {
+  font-size: 200%;
+}
 
-  h4 {
-    color: yellow;
-    font-size: 72px;
-  }
+.me p {
+  padding-bottom: 20px;
+}
 
-  footer nav {
-    background-color: gray;
-    text-decoration: none;
-    text-align: center;
-    justify-content: space-between;
-    margin: 10px;
-  }
+.me h2 {
+  text-decoration: underline;
+}
+
+h4 {
+  color: yellow;
+  font-size: 72px;
+}
+
+footer nav {
+  background-color: gray;
+  text-decoration: none;
+  text-align: center;
+  justify-content: space-between;
+  margin: 10px;
+}
 
 @media screen and (max-width: 825px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-    aside {
-      border-right: 0;
-    }
-/* Issues with picture here */
-    .me img{
-      display: flex;
-      flex-shrink: 1;
-    }
-
-    .card:hover, .card-big:hover{
-      -moz-transform: none;
-      -webkit-transform: none;
-      -o-transform: none;
-      -ms-transform: none;
-      transform: none;
-    }
-
-    nav a:hover {
-      outline: none;
-    }
-
-    .card img, .card-big img {
-      display: flex;
-      width: 250px;
-    }
-
-    .main-title a{
-      display: flex;
-      justify-content: center;
-      margin: 30px 0 30px 0;
-      font-size: 80px;
-    }
-}
-@media screen and (max-width: 438px) {
   main,
   nav {
     flex-direction: column;
@@ -209,60 +175,122 @@ nav a:hover {
   aside {
     border-right: 0;
   }
-  .card:hover, .card-big:hover{
+
+  .me h2,
+  .me p {
+    font-size: 150%;
+  }
+
+  .me p {
+    padding-bottom: 10px;
+  }
+
+  .me img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 0 0 0 10px;
+  }
+
+  .card:hover,
+  .card-big:hover {
     -moz-transform: none;
     -webkit-transform: none;
     -o-transform: none;
     -ms-transform: none;
     transform: none;
   }
+
   nav a:hover {
     outline: none;
   }
-  .navigation-bar{
+
+  .card img,
+  .card-big img {
+    display: flex;
+    width: 250px;
+  }
+
+  .main-title a {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 438px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+
+  aside {
+    border-right: 0;
+  }
+
+  .card:hover,
+  .card-big:hover {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  nav a:hover {
+    outline: none;
+  }
+
+  .navigation-bar {
     display: flex;
     flex-direction: column;
   }
+
   .footer {
     display: flex;
     flex-direction: column;
   }
+
   h4 {
     color: yellow;
     font-size: 36px;
   }
-  .card img, .card-big img {
-    display: flex;
-    width: 250px;
-    padding: 0 0 0 40px;
-  }
 
-/* Issues with pictures and titles runnning off the screen at 
-max-width 300px */
-  .card, .card-big {
+  .card img,
+  .card-big img {
     border: 0;
     margin: 20px;
     border: none;
     padding: 0 0 0 40px;
   }
-  .main-title a{
+
+  .card,
+  .card-big {
+    margin: 20px;
+    border: none;
+    padding: 0 0 0 40px;
+  }
+
+  .main-title a {
     display: flex;
     justify-content: center;
     margin: 30px 0 30px 0;
     font-size: 60px;
   }
-  .me img{
-    display: flex;
-    width: 250px;
-    padding: 0 0 0 40px;
-  }
+
   .about-me p {
     font-size: 120%;
     padding-bottom: 20px;
+    width: 90%;
   }
 
-  .aside h2, aside h2 a {
+  .aside h2,
+  aside h2 a {
     font-size: 120%;
   }
 
 }
+
+
+
+
