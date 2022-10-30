@@ -1,8 +1,8 @@
-/* need to do commenting */
+/* flexbox */
 * {
   box-sizing: border-box;
 }
-
+/* custom CSS variables */
 :root {
   --heaven: aliceblue;
   --hell: red;
@@ -104,6 +104,7 @@ nav a:hover {
   outline: 1px solid var(--hell);
 }
 
+/* application cards, top one is larger than the other 3, named card-big */
 .applications {
   flex: 4;
   padding: 20px;
